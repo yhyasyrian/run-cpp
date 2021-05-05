@@ -10,7 +10,7 @@
  To run, use the following code
 
 ```
-cd ~ ; cd run-cpp ; run.php
+cd ~ ; cd run-cpp ; php run.php
 ```
 
  And then use the code c++
