@@ -13,7 +13,7 @@ while(true){
       echo "\033[0;32m".shell_exec('./a.out')."\033[0m";
     }
     unlink("test.cpp");
-    break;
     echo "\n";
+    break;
   }
 }
