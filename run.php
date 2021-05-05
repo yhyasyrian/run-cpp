@@ -10,7 +10,8 @@ while(true){
     if(preg_match('#error:#',$run)){
       echo $run;
     }else{
-      echo "\033[0;32m".shell_exec('./a.out')."\033[0m";
+      echo "\033[0;32m"."Result:"."\033[0m";
+      echo shell_exec('./a.out');
     }
     unlink("test.cpp");
     echo "\n";
