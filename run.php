@@ -6,6 +6,7 @@ while(true){
   if(strtolower($code) != "run"){
     file_put_contents("test.cpp",$code."\n",FILE_APPEND);
   }else{
+    echo "\n";
     $run = shell_exec("c++ test.cpp");
     if(preg_match('#error:#',$run)){
       echo $run;
