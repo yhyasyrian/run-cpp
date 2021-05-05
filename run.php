@@ -6,14 +6,14 @@ while(true){
   if(strtolower($code) != "run"){
     file_put_contents("test.cpp",$code."\n",FILE_APPEND);
   }else{
-    echo "\n";
     $run = shell_exec("c++ test.cpp");
     if(preg_match('#error:#',$run)){
       echo $run;
     }else{
-      echo '\033[0;32m'.shell_exec('./a.out').'\033[0m';
+      echo "\033[0;32m".shell_exec('./a.out')."\033[0m";
     }
     unlink("test.cpp");
     break;
+    echo "\n";
   }
 }
