@@ -3,6 +3,5 @@ green='\033[0;32m'
 white='\033[0m'
 echo -e "Please Wait For The Attachments To Load ..."
 pkg install php
-pkg insbash g++
 chmod +x code.php
 echo -e "${green}Plugins Loaded Successfully !${white}"
